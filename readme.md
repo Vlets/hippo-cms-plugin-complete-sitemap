@@ -9,8 +9,26 @@ and to the priority of any retrieved hippo documents to 0.9.
 This creates a sitemap.xml of the whole website that is callable by default at
 **http://localhost:8080/site/complete-sitemap.xml**.
 
-## Dependencies
+## Installation
 Before installing this plugin, you **MUST** have the Sitemap essentials plugin installed.
+
+### POM.xml
+
+In the POM.xml in your *cms* folder, add:
+
+    <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <version>1.0</version>
+      <artifactId>hippo-plugin-complete-sitemap-content</artifactId>
+    </dependency>
+    
+In the POM.xml in your *site* folder, add:
+
+    <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <version>1.0</version>
+      <artifactId>hippo-plugin-complete-sitemap-component</artifactId>
+    </dependency>
 
 ## Usage
 By default, the plugin will not retrieve any documents. In 
