@@ -23,7 +23,7 @@
     <version>1.0</version>
   </parent>
   <name>Hippo Plugin Sitemap Component</name>
-  <description>Hippo Plugin Complete Sitemap Component</description>
-  <artifactId>hippo-plugin-complete-sitemap-component</artifactId>
+  <description>Hippo Plugin Complete Sitemap Content</description>
+  <artifactId>hippo-plugin-complete-sitemap-content</artifactId>
 
   </project>

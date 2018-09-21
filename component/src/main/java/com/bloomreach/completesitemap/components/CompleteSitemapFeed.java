@@ -102,7 +102,7 @@ public class CompleteSitemapFeed extends BaseHstComponent {
         request.setAttribute("sitemap", sitemap);
     }
 
-    private Urlset removeDuplicateUrls(Urlset landingPagesSet, Urlset lowPrioritySet){
+    public Urlset removeDuplicateUrls(Urlset landingPagesSet, Urlset lowPrioritySet){
         Urlset urlSetCombined = new Urlset();
         Urlset urlSetWithoutDuplicates = new Urlset();
         urlSetCombined.getUrls().addAll(landingPagesSet.getUrls());

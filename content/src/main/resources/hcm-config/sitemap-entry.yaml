@@ -1,6 +1,6 @@
 definitions:
   config:
-    /hst:hst/hst:configurations/hst:default/hst:sitemap/sitemap.xml:
+    /hst:hst/hst:configurations/hst:default/hst:sitemap/complete-sitemap.xml:
       jcr:primaryType: hst:sitemapitem
       hst:componentconfigurationid: hst:components/forge-complete-sitemap-feed
       hst:hiddeninchannelmanager: true

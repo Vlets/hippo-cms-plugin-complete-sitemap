@@ -1,3 +1,0 @@
-/forge-complete-sitemap-feed.ftl:
-  jcr:primaryType: hst:template
-  hst:script: '<#ftl attributes={"content_type": "application/xml"} />${sitemap}'

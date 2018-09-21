@@ -2,5 +2,7 @@ definitions:
   config:
     /hst:hst/hst:configurations/hst:default/hst:components/forge-complete-sitemap-feed:
       jcr:primaryType: hst:component
-      hst:componentclassname: com.bloomreach.complete-sitemap.components.CompleteSitemapFeed
-      hst:template: forge-complete-sitemap-feed.ftl
+      hst:componentclassname: com.bloomreach.completesitemap.components.CompleteSitemapFeed
+      hst:parameternames: [documentTypes, propertyCriteria, timezone]
+      hst:parametervalues: ['${documentTypes}', '${propertyCriteria}', '${timezone}']
+      hst:template: forge-sitemap-feed.ftl
