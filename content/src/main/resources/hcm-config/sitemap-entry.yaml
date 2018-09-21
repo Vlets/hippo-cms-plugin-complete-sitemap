@@ -1,0 +1,8 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/hst:default/hst:sitemap/sitemap.xml:
+      jcr:primaryType: hst:sitemapitem
+      hst:componentconfigurationid: hst:components/forge-complete-sitemap-feed
+      hst:hiddeninchannelmanager: true
+      hst:parameternames: [documentTypes, propertyCriteria]
+      hst:parametervalues:  ['${documentTypes}', '${assets-url-prefix}']

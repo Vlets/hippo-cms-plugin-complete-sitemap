@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2009-2018 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.onehippo.cms7</groupId>
+    <artifactId>hippo-cms7-project</artifactId>
+    <version>29.4</version>
+  </parent>
+
+  <name>Hippo Plugin Complete Sitemap</name>
+  <description>Hippo Plugin Copmlete Sitemap</description>
+  <artifactId>hippo-plugin-complete-sitemap</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0</version>
+
+  <inceptionYear>2018</inceptionYear>
+
+  <properties>
+    <!-- use root project name for all project modules NOTICE files, should be the same as in the root NOTICE file -->
+    <notice.project.name>Hippo Plugin Complete Sitemap</notice.project.name>
+
+    <hippo.hst.version>5.4.0</hippo.hst.version>
+    <hippo.repository.version>5.4.0</hippo.repository.version>
+    <hippo.commons.version>4.4.0</hippo.commons.version>
+    <hippo.sitemap.version>4.4.0</hippo.sitemap.version>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>hippo</id>
+      <name>Hippo Maven 2</name>
+      <url>https://maven.onehippo.com/maven2/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </repository>
+  </repositories>
+
+  <profiles>
+    <profile>
+      <id>pedantic</id>
+      <build>
+        <plugins>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
+
+  <modules>
+    <module>component</module>
+    <module>content</module>
+  </modules>
+
+</project>
+

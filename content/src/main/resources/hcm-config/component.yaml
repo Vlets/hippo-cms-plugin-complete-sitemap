@@ -1,0 +1,6 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/hst:default/hst:components/forge-complete-sitemap-feed:
+      jcr:primaryType: hst:component
+      hst:componentclassname: com.bloomreach.complete-sitemap.components.CompleteSitemapFeed
+      hst:template: forge-complete-sitemap-feed.ftl

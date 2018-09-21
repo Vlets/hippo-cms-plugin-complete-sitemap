@@ -1,0 +1,5 @@
+group: hippo-cms
+project:
+    name: hippo-plugin-complete-sitemap
+    after: hippo-plugin-sitemap
+module: hippo-plugin-complete-sitemap-content
