@@ -146,8 +146,9 @@ public class CompleteSitemapFeed extends BaseHstComponent {
 
         while (hstSiteMapItemListIterator.hasNext()) {
             final HstSiteMapItem hstSiteMapItem = hstSiteMapItemListIterator.next();
-            if (hstSiteMapItem.getPageTitle() == null){
-                LOG.debug("Skipping node, because it is a wild card node");
+            if (hstSiteMapItem.getPageTitle() == null
+                    || ( hstSiteMapItem.getRefId() != null && hstSiteMapItem.getRefId().equals("pagenotfound") ) ){
+                LOG.debug("Skipping node, because it is a wild card node or 404 page");
                 continue;
             }
             documentUrl = createDocumentUrlForSitemapItem(hstSiteMapItem, requestContext);
